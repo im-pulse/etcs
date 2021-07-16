@@ -1,0 +1,260 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+html {
+  background: linear-gradient(to bottom, #00a3d2, #eaeaea);
+  height: auto !important;
+}
+body {
+
+background: transparent;
+
+animation: snow 20s linear infinite;
+
+background-image:url('https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png'), url("https://cdn.discordapp.com/attachments/460145928850898945/515694460668084274/snow3.png"), url("https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png");
+
+}
+
+@keyframes snow {
+
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+
+}
+
+header .row>div:nth-child(1)>a {
+    display: block;
+    width: 145px;
+    height: 50px;
+    background: /* url(https://i.postimg.cc/15YZnkjp/1-1.png) no-repeat; */ no-repeat;
+    background-size: auto 50px;
+  }
+
+header .row>div:nth-child(1)>a>img {
+
+  display: none;
+
+}
+
+/* 검색창 */
+
+header #right-search-form>input[type=text] {
+
+    border: 3px solid #fff2e9; 
+
+    border-radius: 15px;
+
+}
+
+/* 검색 버튼 */
+
+header #right-search-form>#right-search-btn {
+
+    color: #fcfcfc;
+
+}
+
+/* 배너 */
+
+header #header-bar>.row, #main .menu-wrapper, #main #main-content>div.frame {
+
+    border-radius: 15px;
+
+}
+
+/* 광고 배너 */
+header #header-bar>.row{
+	background: linear-gradient(rgba(109,122,255,0.4) 10%,#bcdaff);
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+    border-radius: 5px 5px 5px 5px;
+}
+
+header #header-bar #header-top-notice strong.notice-badge {
+
+    background: #ff6a89; 
+
+}
+.label-default{
+	background-color: #8cd2ff;
+}
+
+header #header-bar #header-menu-left, header #header-bar #header-menu-right{border: 0px;}
+
+
+/* 좌측 배너 */
+#main .menu-wrapper{
+	border-right: none;
+	border-bottom: none;
+}
+#main .menu-wrapper>.header{
+	background: linear-gradient(#4e8df5 20%,#8fceff);
+	border-radius: 0px 0px 0px 0px;
+}
+
+
+#main .menu-wrapper>a>em{
+	color: #70c7ff;
+}
+
+
+/* 메인 배너 */
+
+#main #main-content>div.frame {
+
+    background: linear-gradient(#e0ffff, #deffe2); 
+
+}
+
+/* 접속자 수 */
+
+#board-info #viewers-area {
+
+    color: #000000; 
+}
+
+#board-info #viewers-area #viewers:before {
+
+    content: "트수 ";   
+    cursor: text;
+
+}
+
+#board-info #viewers-area #viewers:after {
+
+    content: "명이 접속 중";  
+
+
+    cursor: text;
+
+}
+
+/* 카테고리 */
+
+#article-list #article-option-area{
+	right: 15px;
+	top: 2px;
+}
+
+#article-list #article-list-category{
+	background: rgba(145,234,238,0.5);
+	border: 1.5px solid #ffffff;
+	margin-bottom: 10px;
+}
+#article-list #article-list-category > a.active, #article-list #article-list-category>a:hover,#article-list #article-list-category>a{
+	background: none;
+}
+
+
+/* 메인 배너 글 공지 */
+
+#article-list>.article-list-row.notice {
+    margin-top: 5px;
+    background-color: rgba(127,255,212,0.45);
+	margin-bottom: 10px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+/* 글 추천 수 */
+
+#article-list>.article-list-row>.item>.list-header>span {
+	background-color: rgba(168,64,255,0.8);
+	padding: 2px 6px;
+	font-size: 10px;
+}
+
+/* 댓글 수 */
+
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+
+    color: #000000; 
+
+}
+
+#article-reply-area > .header h5 {
+
+    color: #000000; 
+
+}
+
+#article-content-wrapper>.header{
+	background: rgba(145,234,238,0.5);
+}
+#article-content-wrapper>.footer{
+	background: rgba(145,234,238,0.5);
+}
+.btn-group-sm>.btn, .btn-sm{
+	border-radius: 7px 0px;
+	border-color: #fff;
+}
+
+.fr-toolbar{
+	color: #263459;
+	border-top: 5px solid #aaffe8;
+}
+
+#article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply>.reply-header{
+	background: #deffe2;
+	border-bottom: 2px solid #fff;
+}
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged{
+	color: #000000;
+}
+
+
+/* 하단 버튼들 */
+
+#article-list #article-list-menu>.btn.best {
+
+    border-radius: 15px;
+
+}
+
+#article-list #article-list-menu>.btn.cog {
+
+    border-radius: 15px;
+
+}
+
+#article-list #article-list-menu>.btn.del {
+
+    border-radius: 15px;
+
+}
+
+#article-list #article-list-menu>.btn.write {
+
+    border-radius: 15px;
+
+}
+
+.btn-primary {
+
+    background-color: #ff84a6; 
+
+    border-color: #ffffff; 
+}
+
+/* 목록 버튼 */
+
+.btn {
+
+    border-radius: 15px;
+
+}
+
+.btn-group-sm>.btn, .btn-sm {
+
+    border-radius: 15px;
+
+}
+
+/* 게시글 추천 */
+
+.btn-outline-success {
+
+    color: #000000; 
+
+    border-color: #00b1ec;
+
+}
