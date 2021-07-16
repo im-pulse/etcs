@@ -1,12 +1,11 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 html {
   background: linear-gradient(to bottom, #00a3d2, #eaeaea);
   height: auto !important;
 }
 body {
-
-background: transparent;
-
+background: transparent; 
+font-family: 'Poor Story', cursive;
 animation: snow 20s linear infinite;
 
 background-image:url('https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png'), url("https://cdn.discordapp.com/attachments/460145928850898945/515694460668084274/snow3.png"), url("https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png");
@@ -34,6 +33,20 @@ header .row>div:nth-child(1)>a>img {
   display: none;
 
 }
+/* 프로필 위치 이동, 프로필 테두리 추가, 테두리 동그라미 시작 */
+#board-info img{
+float:left !important;
+border-radius: 100px;
+border: 1px solid #00b1ec;
+
+}
+#board-info #board-info-profile-img {width: 80px;  height: 80px;  position: absolute; z-index: 50; margin: -10px;}
+#board-info > h1 {margin-top: -1px; margin-left: 80px;}
+#board-info-bottom {margin-bottom: 3px; margin-left:80px }
+
+#board-info { margin-bottom:30px; }
+
+#board-info h1 { padding-bottom:2px; }
 
 /* 검색창 */
 
@@ -63,16 +76,18 @@ header #header-bar>.row, #main .menu-wrapper, #main #main-content>div.frame {
 
 /* 광고 배너 */
 header #header-bar>.row{
+ 
 	background: linear-gradient(rgba(109,122,255,0.4) 10%,#bcdaff);
 	border-top: none;
 	border-bottom: none;
 	border-right: none;
+    font-size:14px;
     border-radius: 5px 5px 5px 5px;
 }
 
 header #header-bar #header-top-notice strong.notice-badge {
 
-    background: #ff6a89; 
+    background: #ff6a89; /* 광고 배너 광고 뱃지 배경 색상 */
 
 }
 .label-default{
@@ -86,8 +101,10 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 #main .menu-wrapper{
 	border-right: none;
 	border-bottom: none;
+ 
 }
 #main .menu-wrapper>.header{
+ 
 	background: linear-gradient(#4e8df5 20%,#8fceff);
 	border-radius: 0px 0px 0px 0px;
 }
@@ -101,16 +118,16 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 /* 메인 배너 */
 
 #main #main-content>div.frame {
-
     background: linear-gradient(#e0ffff, #deffe2); 
-
 }
 
 /* 접속자 수 */
 
 #board-info #viewers-area {
-
-    color: #000000; 
+    font-size:16px;
+    margin-bottom: 5px;
+    color: #000000; /* 접속자 수 글씨 색 */
+ 
 }
 
 #board-info #viewers-area #viewers:before {
@@ -129,14 +146,14 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 
 }
 
-/* 카테고리 */
-
+/*카테고리*/
 #article-list #article-option-area{
 	right: 15px;
 	top: 2px;
 }
 
 #article-list #article-list-category{
+    font-size:14px;
 	background: rgba(145,234,238,0.5);
 	border: 1.5px solid #ffffff;
 	margin-bottom: 10px;
@@ -150,7 +167,7 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 
 #article-list>.article-list-row.notice {
     margin-top: 5px;
-    background-color: rgba(127,255,212,0.45);
+    background-color: rgba(127,255,212,0.45); /* 공지 배경 색 */
 	margin-bottom: 10px;
 	border-radius: 5px 5px 5px 5px;
 }
@@ -167,13 +184,13 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 
 #article-list>.article-list-row>.item>.list-title>small.comment-count {
 
-    color: #000000; 
+    color: #000000; /* 댓글 수 색 */
 
 }
 
 #article-reply-area > .header h5 {
 
-    color: #000000; 
+    color: #000000; /* 댓글 수 색 */
 
 }
 
@@ -202,7 +219,7 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 }
 
 
-/* 하단 버튼들 */
+/* 인기글 버튼 */
 
 #article-list #article-list-menu>.btn.best {
 
@@ -210,17 +227,23 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 
 }
 
+/* 설정 버튼 */
+
 #article-list #article-list-menu>.btn.cog {
 
     border-radius: 15px;
 
 }
 
+/* 삭제 버튼 */
+
 #article-list #article-list-menu>.btn.del {
 
     border-radius: 15px;
 
 }
+
+/* 글 쓰기 버튼 */
 
 #article-list #article-list-menu>.btn.write {
 
@@ -230,9 +253,10 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 
 .btn-primary {
 
-    background-color: #ff84a6; 
+    background-color: #ff84a6; /* 글 쓰기 버튼 배경 색 */
 
-    border-color: #ffffff; 
+    border-color: #ffffff; /* 글 쓰기 버튼 배경 색 */
+
 }
 
 /* 목록 버튼 */
@@ -253,8 +277,8 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 
 .btn-outline-success {
 
-    color: #000000; 
+    color: #000000; /* 추천 버튼 배경 색 */
 
-    border-color: #00b1ec;
+    border-color: #00b1ec; /* 추천 버튼 테두리 색 */
 
 }
