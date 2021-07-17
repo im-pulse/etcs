@@ -139,14 +139,14 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 }
 
 #board-info #viewers-area #viewers:before {
-    content: "트수 ";   
+    content: "퍼피 ";   
     cursor: text;
 
 }
 
 #board-info #viewers-area #viewers:after {
 
-    content: "명이 접속 중";  
+    content: "명이 주인님 기다리는 중♡";  
 
 
     cursor: text;
@@ -280,13 +280,88 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 
 }
 
-/* 게시글 추천 */
 
-.btn-outline-success {
 
-    color: #000000; /* 추천 버튼 배경 색 */
+.vote-btn[data-type="up"] {
 
-    border-color: #00b1ec; /* 추천 버튼 테두리 색 */
+    border: none;
+  
+    font-size: 0;
+  
+  }
+  
+  
+  
+  .vote-btn[data-type="up"]:hover {
+  
+    background: none !important;
+  
+  }
+  
+  
+  
+  .vote-btn[data-type="up"]::before {
+  
+    display: inline-block;
+  
+    background: white;
+  
+    border: solid #5cb85c 1px;
+  
+    float: left;
+  
+    width: 60px;
+  
+    height: 60px;
+  
+    border-radius: 60px;
+  
+    font-size: 26pt;
+  
+    content: "\f164";
+  
+    padding-top: 17px;
+  
+    padding-left: 2px;
+  
+    font: normal 22px/1 FontAwesome;
+  
+    -moz-transition:color .2s ease;
+  
+    -o-transition:color .2s ease;
+  
+    -ms-transition:color .2s ease;
+  
+    -webkit-transition:color .2s ease;
+  
+    transition:color .2s ease;
+  
+  }
+  
+  
+  
+  .vote-btn[data-type="up"]:hover::before {
+  
+    background: #5cb85c;
+  
+    color: white;
+  
+  }
+  
+  
+  
+  .vote-btn[data-type="up"] span {
+  
+    float: left;
+  
+    padding-top: 14px;
+  
+    padding-left: 15px;
+  
+    font-size: 22px;
+  
+    color: #5cb85c;
+  
+  }
 
-}
 *:focus { outline: none !important; }
