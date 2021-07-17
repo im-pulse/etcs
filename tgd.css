@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
 html {
-  background: linear-gradient(to bottom, #00a3d2, #eaeaea);
+  background: linear-gradient(to bottom, rgba(0,163,222,0.95), #eaeaea 80%);
   height: auto !important;
 }
 body {
@@ -113,17 +115,23 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 #main .menu-wrapper>a>em{
 	color: #70c7ff;
 }
+/* 좌측 배너 빈 공간 */
+#main .menu-wrapper .spacer {
+    background: none;
+
+}
 
 
 /* 메인 배너 */
 
 #main #main-content>div.frame {
-    background: linear-gradient(#e0ffff, #deffe2); 
+    background: linear-gradient(rgba(220,255,255,0.6) 85%, rgba(218,255,223,0.5)); 
 }
 
 /* 접속자 수 */
 
 #board-info #viewers-area {
+    font-family: 'Single Day';
     font-size:16px;
     margin-bottom: 5px;
     color: #000000; /* 접속자 수 글씨 색 */
@@ -131,7 +139,6 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 }
 
 #board-info #viewers-area #viewers:before {
-
     content: "트수 ";   
     cursor: text;
 
@@ -139,7 +146,7 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 
 #board-info #viewers-area #viewers:after {
 
-    content: "명이 접속 중";  
+    content: "명이 주인님 기다리는 중♡";  
 
 
     cursor: text;
@@ -175,7 +182,7 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 /* 글 추천 수 */
 
 #article-list>.article-list-row>.item>.list-header>span {
-	background-color: rgba(168,64,255,0.8);
+	background-color: rgba(168,64,255,0.9);
 	padding: 2px 6px;
 	font-size: 10px;
 }
@@ -282,3 +289,4 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
     border-color: #00b1ec; /* 추천 버튼 테두리 색 */
 
 }
+*:focus { outline: none !important; }
