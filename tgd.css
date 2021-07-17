@@ -146,7 +146,7 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 
 #board-info #viewers-area #viewers:after {
 
-    content: "명이 주인님 기다리는 중♡";  
+    content: "명이 접속 중";  
 
 
     cursor: text;
