@@ -107,7 +107,7 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 }
 #main .menu-wrapper>.header{
  
-	background: linear-gradient(#4e8df5 20%,#8fceff);
+	background: linear-gradient(rgba(78,141,245,0.6) 20%,rgba(143,206,255,0.9));
 	border-radius: 0px 0px 0px 0px;
 }
 
@@ -139,14 +139,14 @@ header #header-bar #header-menu-left, header #header-bar #header-menu-right{bord
 }
 
 #board-info #viewers-area #viewers:before {
-    content: "퍼피 ";   
+    content: "트수 ";   
     cursor: text;
 
 }
 
 #board-info #viewers-area #viewers:after {
 
-    content: "명이 주인님 기다리는 중♡";  
+    content: "명이 접속 중♡";  
 
 
     cursor: text;
