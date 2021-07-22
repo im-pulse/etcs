@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>계산기</title>
+ 
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 5px 10px;
+            text-align: center;
+            width: 50px;
+        }
+        input {
+            text-align: right;
+            border: none;
+        }
+        input:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="4">
+                <input type="text" id="display">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input type="text" id="result">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" onclick="reset()">AC</td>
+            <td onclick="del()">Back</td>
+            <td onclick="add('/')">/</td>
+        </tr>
+        <tr>
+            <td onclick="add(7)">7</td>
+            <td onclick="add(8)">8</td>
+            <td onclick="add(9)">9</td>
+            <td onclick="add('*')">*</td>
+        </tr>
+        <tr>
+            <td onclick="add(4)">4</td>
+            <td onclick="add(5)">5</td>
+            <td onclick="add(6)">6</td>
+            <td onclick="add('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="add(1)">1</td>
+            <td onclick="add(2)">2</td>
+            <td onclick="add(3)">3</td>
+            <td onclick="add('+')">+</td>
+        </tr>
+        <tr>
+            <td colspan="2" onclick="add(0)">0</td>
+            <td onclick="add('.')">.</td>
+            <td onclick="calculate()">=</td>
+        </tr>
+    </table>
+    <script>
+
+        var numberClicked = false; 
+        var used = false;
+        function add (char) {
+        
+        if(used==true)
+        {
+            var foo1 = document.getElementById('result').value
+
+            document.getElementById('display').value = foo1;
+            document.getElementById('result').value = "";
+            used = false;
+        }
+
+        if(numberClicked == false) {
+            if(isNaN(char) == true) 
+            {
+
+            } 
+            else {
+                document.getElementById('display').value += char; 
+            }
+        } else {
+            document.getElementById('display').value += char; 
+        }
+
+        if(isNaN(char) == true) { 
+            numberClicked = false; 
+        } 
+        else {
+            numberClicked = true; 
+            }
+        }
+        function calculate() {
+            var display = document.getElementById('display');
+            var result =  (new Function('return ' + display.value ) )(); 
+            document.getElementById('result').value = result;
+            used = true;
+        }
+        function reset() {
+            document.getElementById('display').value = "";
+            document.getElementById('result').value = "";
+        }
+        function del() {
+        let fvalue = document.getElementById('display').value
+        document.getElementById('display').value = fvalue.slice(0, fvalue.length-1)
+        }
+
+
+    </script>
+</body>
+</html>
