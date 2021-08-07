@@ -24,9 +24,21 @@
             outline: none;
         }
         button { 
-            width: 50px; 
+            border: none;
+            background: orange;
+            width: 100%; 
             height: 50px; 
             margin: 5px; 
+            font-weight:bold;
+        }
+        button.buttonright { 
+            border: none;
+            background: #828284;
+            width: 100%; 
+            height: 50px; 
+            margin: 5px; 
+            color:white;
+            font-weight:bold;
         }
         button:hover {
             -webkit-transition-duration: 0.2s;
@@ -51,30 +63,30 @@
         <tr>
             <td colspan="2"> <button class = "button "  onclick="reset()">AC</td>
             <td><button class = "button " onclick="del()">Back</td>
-            <td><button class = "button " onclick="add('/')">/</td>
+            <td><button class = "buttonright " onclick="add('/')">/</td>
         </tr>
         <tr>
             <td><button class = "button "  onclick="add(7)">7</td>
             <td><button class = "button "  onclick="add(8)">8</td>
             <td><button class = "button "  onclick="add(9)">9</td>
-            <td><button class = "button "  onclick="add('*')">*</td>
+            <td><button class = "buttonright "  onclick="add('*')">*</td>
         </tr>
         <tr>
             <td><button class = "button "  onclick="add(4)">4</td>
             <td><button class = "button "  onclick="add(5)">5</td>
             <td><button class = "button "  onclick="add(6)">6</td>
-            <td><button class = "button "  onclick="add('-')">-</td>
+            <td><button class = "buttonright "  onclick="add('-')">-</td>
         </tr>
         <tr>
             <td><button class = "button "  onclick="add(1)">1</td>
             <td><button class = "button "  onclick="add(2)">2</td>
             <td><button class = "button "  onclick="add(3)">3</td>
-            <td><button class = "button "  onclick="add('+')">+</td>
+            <td><button class = "buttonright "  onclick="add('+')">+</td>
         </tr>
         <tr>
             <td colspan="2"> <button class = "button "  onclick="add(0)">0</td>
-            <td><button class = "button "  onclick="add('.')">.</td>
-            <td><button class = "button "  onclick="calculate()">=</td>
+            <td><button class = "buttonright "  onclick="add('.')">.</td>
+            <td><button class = "buttonright "  onclick="calculate()">=</td>
         </tr>
     </table>
     <script>
